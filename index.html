@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An unofficial, educational timeline of Formula 1 cars, drivers and world champions from 1950 to today.">
+    <title>Formula 1 History: 1950 – Present</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        /* Apply saved/preferred theme before first paint to avoid a flash */
+        (function () {
+            try {
+                var t = localStorage.getItem('f1-theme');
+                if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to light theme">☀</button>
+        <div class="header-content">
+            <h1 class="site-title">FORMULA 1 HISTORY</h1>
+            <p class="site-subtitle">From 1950 to Present Day</p>
+        </div>
+        <div class="checker" aria-hidden="true"></div>
+    </header>
+
+    <!-- Navigation Tabs (sticky) -->
+    <nav class="navigation" aria-label="Sections">
+        <div class="tablist" role="tablist" id="tablist">
+            <button type="button" class="nav-btn active" role="tab" id="tab-cars" aria-controls="cars-section" aria-selected="true" data-section="cars">Cars</button>
+            <button type="button" class="nav-btn" role="tab" id="tab-drivers" aria-controls="drivers-section" aria-selected="false" tabindex="-1" data-section="drivers">Drivers</button>
+            <button type="button" class="nav-btn" role="tab" id="tab-champions" aria-controls="champions-section" aria-selected="false" tabindex="-1" data-section="champions">Champions</button>
+            <button type="button" class="nav-btn" role="tab" id="tab-records" aria-controls="records-section" aria-selected="false" tabindex="-1" data-section="records">Records</button>
+        </div>
+    </nav>
+
+    <!-- Search, filters and sorting -->
+    <div class="controls" id="controls" role="search">
+        <input type="search" id="searchInput" class="search-input" aria-label="Search" placeholder="Search by name, team, engine or year..." autocomplete="off">
+        <select id="filterYear" class="filter-select" aria-label="Filter by year"><option value="">All Years</option></select>
+        <select id="filterTeam" class="filter-select" aria-label="Filter by team"><option value="">All Teams</option></select>
+        <select id="filterEra" class="filter-select" aria-label="Filter by era"><option value="">All Eras</option></select>
+        <select id="sortSelect" class="filter-select" aria-label="Sort by"></select>
+        <button type="button" id="clearFilters" class="btn btn-ghost" hidden>Clear filters</button>
+    </div>
+
+    <div class="status-row" id="statusRow">
+        <p id="resultCount" class="result-count" aria-live="polite"></p>
+        <div class="compare-bar" id="compareBar" hidden>
+            <span id="compareText"></span>
+            <button type="button" id="compareOpen" class="btn" disabled>Compare</button>
+            <button type="button" id="compareClear" class="btn btn-ghost">Clear</button>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <main class="container" id="main" tabindex="-1">
+        <section id="cars-section" class="content-section active" role="tabpanel" aria-labelledby="tab-cars">
+            <h2 class="section-title">Iconic F1 Cars</h2>
+            <ul id="cars-grid" class="grid"></ul>
+        </section>
+
+        <section id="drivers-section" class="content-section" role="tabpanel" aria-labelledby="tab-drivers">
+            <h2 class="section-title">Legendary Drivers</h2>
+            <ul id="drivers-grid" class="grid"></ul>
+        </section>
+
+        <section id="champions-section" class="content-section" role="tabpanel" aria-labelledby="tab-champions">
+            <h2 class="section-title">World Champions</h2>
+            <ul id="champions-grid" class="grid"></ul>
+        </section>
+
+        <section id="records-section" class="content-section" role="tabpanel" aria-labelledby="tab-records">
+            <h2 class="section-title">Stats &amp; Records</h2>
+            <div id="records-root"></div>
+        </section>
+
+        <div class="load-more-wrap">
+            <button type="button" id="loadMore" class="btn" hidden>Show more</button>
+        </div>
+    </main>
+
+    <!-- Detail / compare modal -->
+    <dialog id="modal" class="modal" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" id="modalClose" aria-label="Close">×</button>
+        <div id="modalBody" class="modal-body"></div>
+    </dialog>
+
+    <footer class="footer">
+        <p>&copy; <span id="year">2026</span> Formula 1 History | Educational Project by Viprav Gandamwar</p>
+        <p class="disclaimer">Unofficial fan project, not affiliated with or endorsed by Formula 1, the FIA or any team. "Formula 1" and "F1" are trademarks of their respective owners. Images remain the property of their creators; add credits in the data files.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
