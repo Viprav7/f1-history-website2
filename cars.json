@@ -1,0 +1,20 @@
+[
+  {"name":"Alfa Romeo 158","year":1950,"team":"Alfa Romeo","engine":"1.5L supercharged straight-8","notes":"The 'Alfetta' dominated the first official World Championship season, winning every round it entered.","image":""},
+  {"name":"Ferrari 500","year":1952,"team":"Ferrari","engine":"2.0L straight-4","notes":"Alberto Ascari's car for two consecutive titles, in a period when the championship ran to Formula 2 rules.","image":""},
+  {"name":"Mercedes-Benz W196","year":1954,"team":"Mercedes","engine":"2.5L fuel-injected straight-8","notes":"Streamlined and desmodromic-valved, it carried Juan Manuel Fangio to titles in 1954 and 1955.","image":""},
+  {"name":"Cooper T51","year":1959,"team":"Cooper","engine":"2.5L Coventry Climax straight-4","notes":"The rear-engined layout that changed Formula 1 for good.","image":""},
+  {"name":"Lotus 49","year":1967,"team":"Lotus","engine":"3.0L Ford Cosworth DFV V8","notes":"Debuted the legendary Cosworth DFV as a stressed member of the chassis and won on its first race.","image":""},
+  {"name":"Lotus 72","year":1970,"team":"Lotus","engine":"3.0L Ford Cosworth DFV V8","notes":"Wedge-shaped, with side radiators and inboard brakes; raced in several forms until 1975.","image":""},
+  {"name":"McLaren M23","year":1973,"team":"McLaren","engine":"3.0L Ford Cosworth DFV V8","notes":"Won titles for Emerson Fittipaldi in 1974 and James Hunt in 1976.","image":""},
+  {"name":"Ferrari 312T","year":1975,"team":"Ferrari","engine":"3.0L flat-12","notes":"The transverse gearbox ('T') gave better weight distribution and carried Niki Lauda to the 1975 title.","image":""},
+  {"name":"Lotus 79","year":1978,"team":"Lotus","engine":"3.0L Ford Cosworth DFV V8","notes":"Perfected ground-effect aerodynamics, with sculpted sidepods acting as inverted wings.","image":""},
+  {"name":"Williams FW07","year":1979,"team":"Williams","engine":"3.0L Ford Cosworth DFV V8","notes":"A ground-effect design that gave Williams its first wins and, in FW07B form, the 1980 title.","image":""},
+  {"name":"McLaren MP4/4","year":1988,"team":"McLaren","engine":"1.5L Honda RA168-E V6 turbo","notes":"Won 15 of 16 races in 1988 with Ayrton Senna and Alain Prost.","image":""},
+  {"name":"Williams FW14B","year":1992,"team":"Williams","engine":"3.5L Renault RS4 V10","notes":"Active suspension and traction control made it the most advanced car of its day.","image":""},
+  {"name":"Benetton B194","year":1994,"team":"Benetton","engine":"3.5L Ford Zetec-R V8","notes":"Michael Schumacher's first championship-winning car.","image":""},
+  {"name":"Ferrari F2004","year":2004,"team":"Ferrari","engine":"3.0L Ferrari Tipo 053 V10","notes":"Won 15 of 18 races in 2004 and is widely considered one of the most dominant cars ever.","image":""},
+  {"name":"Brawn BGP 001","year":2009,"team":"Brawn GP","engine":"2.4L Mercedes-Benz FO 108W V8","notes":"Built on a shoestring budget with a double diffuser, and won the title in the team's only season.","image":""},
+  {"name":"Mercedes-AMG F1 W11 EQ Performance","year":2020,"team":"Mercedes","engine":"1.6L V6 turbo hybrid","notes":"Featured Dual-Axis Steering (DAS) and won the title for the seventh straight year.","image":""},
+  {"name":"Red Bull RB19","year":2023,"team":"Red Bull Racing","engine":"1.6L Honda RBPT V6 turbo hybrid","notes":"Won 21 of 22 races in 2023, the highest win rate in a single season.","image":""},
+  {"name":"McLaren MCL39","year":2025,"team":"McLaren","engine":"1.6L Mercedes V6 turbo hybrid","notes":"Carried Lando Norris to the 2025 championship.","image":""}
+]
